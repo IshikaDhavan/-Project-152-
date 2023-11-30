@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./show.js"></script>
+    <script src="./thebase.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: black">
+      <a-camera position="0 5 25"></a-camera>
+
+      <a-assets>
+        <a-asset-item id="carobj" src="./tinker.obj"></a-asset-item>
+        <a-asset-item id="carmtl" src="./obj.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-entity carshow></a-entity>
+      <a-entity base></a-entity>
+    </a-scene>
+  </body>
+</html>
